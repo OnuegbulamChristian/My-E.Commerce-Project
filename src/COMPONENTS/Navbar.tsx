@@ -53,12 +53,22 @@ export default function Navbar1() {
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">
-              <ul className="flex justify-center items-center gap-3 text-white font-bold text-sm py-2">
-                <p>HOME</p>
-                <p>CATEGORIES</p>
-                <p>ABOUT</p>
-                <p>CONTACT</p>
-                <p>FAQ</p>
+              <ul className="flex justify-center items-center gap-3 text-white font-normal text-sm py-2">
+                <Link to={"/"}>
+                  <p>HOME</p>
+                </Link>
+                <Link to={"/Categories"}>
+                  <p>CATEGORIES</p>
+                </Link>
+                <Link to={"/AboutUs"}>
+                  <p>ABOUT</p>
+                </Link>
+                <Link to={"/Contact"}>
+                  <p>CONTACT</p>
+                </Link>
+                <Link to={"/FAQ"}>
+                  <p>FAQ</p>
+                </Link>
               </ul>
             </div>
           </div>
