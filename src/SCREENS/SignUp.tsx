@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [firstName, setFirstName] = useState("");
@@ -246,12 +246,14 @@ const SignUp = () => {
 
           <p className="mt-10 text-center text-sm text-gray-500">
             Already have an account?{" "}
-            <a
-              href="#"
-              className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
-            >
-              Sign In
-            </a>
+            <Link to={"/Login"}>
+              <a
+                href="#"
+                className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
+              >
+                Login
+              </a>
+            </Link>
           </p>
         </div>
       </div>
