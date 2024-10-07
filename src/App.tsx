@@ -8,7 +8,7 @@ import Login from "./SCREENS/Login";
 
 import AboutUs from "./PAGES/AboutUs";
 import ContactUs from "./PAGES/ContactUs";
-import FAQ from "./PAGES/Sale";
+
 import Shop from "./PAGES/Shop";
 import Sale from "./PAGES/Sale";
 import Review from "./PAGES/Review";
