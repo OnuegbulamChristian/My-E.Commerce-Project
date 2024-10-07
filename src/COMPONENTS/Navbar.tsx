@@ -30,7 +30,7 @@ export default function Navbar1() {
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-white">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon
@@ -45,29 +45,32 @@ export default function Navbar1() {
           </div>
 
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex flex-shrink-0 items-center">
+            {/* <div className="flex flex-shrink-0 items-center">
               <img
                 alt="Your Company"
                 src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
                 className="h-8 w-auto"
               />
-            </div>
+            </div> */}
             <div className="hidden sm:ml-6 sm:block">
               <ul className="flex justify-center items-center gap-3 text-white font-normal text-sm py-2">
                 <Link to={"/"}>
                   <p>HOME</p>
                 </Link>
-                <Link to={"/Categories"}>
-                  <p>CATEGORIES</p>
-                </Link>
                 <Link to={"/AboutUs"}>
                   <p>ABOUT</p>
                 </Link>
+                <Link to={"/Shop"}>
+                  <p>SHOP</p>
+                </Link>
+                <Link to={"/Sale"}>
+                  <p>SALE</p>
+                </Link>
+                <Link to={"/Review"}>
+                  <p>REVIEW</p>
+                </Link>
                 <Link to={"/Contact"}>
                   <p>CONTACT</p>
-                </Link>
-                <Link to={"/FAQ"}>
-                  <p>FAQ</p>
                 </Link>
               </ul>
             </div>
@@ -96,24 +99,28 @@ export default function Navbar1() {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
+      <DisclosurePanel className="md:hidden">
         <div className="space-y-1 px-2 pb-3 pt-2">
-          {navigation.map((item) => (
-            <DisclosureButton
-              key={item.name}
-              as="a"
-              href={item.href}
-              aria-current={item.current ? "page" : undefined}
-              className={classNames(
-                item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium"
-              )}
-            >
-              {item.name}
-            </DisclosureButton>
-          ))}
+          <ul className="flex flex-col px-2.5 justify-start items-start gap-3 text-white font-normal text-sm py-2">
+            <Link to={"/"}>
+              <p>HOME</p>
+            </Link>
+            <Link to={"/AboutUs"}>
+              <p>ABOUT</p>
+            </Link>
+            <Link to={"/Shop"}>
+              <p>SHOP</p>
+            </Link>
+            <Link to={"/Sale"}>
+              <p>SALE</p>
+            </Link>
+            <Link to={"/Review"}>
+              <p>REVIEW</p>
+            </Link>
+            <Link to={"/Contact"}>
+              <p>CONTACT</p>
+            </Link>
+          </ul>
         </div>
       </DisclosurePanel>
     </Disclosure>

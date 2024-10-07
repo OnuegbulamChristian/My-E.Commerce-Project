@@ -5,10 +5,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./HOMEPAGE/HomePage";
 import SignUp from "./SCREENS/SignUp";
 import Login from "./SCREENS/Login";
-import Categories from "./PAGES/Categories";
+
 import AboutUs from "./PAGES/AboutUs";
 import ContactUs from "./PAGES/ContactUs";
-import FAQ from "./PAGES/FAQ";
+import FAQ from "./PAGES/Sale";
+import Shop from "./PAGES/Shop";
+import Sale from "./PAGES/Sale";
+import Review from "./PAGES/Review";
 
 function App() {
   return (
@@ -18,10 +21,11 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/Categories" element={<Categories />} />
+          <Route path="/Shop" element={<Shop />} />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Contact" element={<ContactUs />} />
-          <Route path="/FAQ" element={<FAQ />} />
+          <Route path="/Sale" element={<Sale />} />
+          <Route path="/Review" element={<Review />} />
         </Routes>
       </BrowserRouter>
     </div>
