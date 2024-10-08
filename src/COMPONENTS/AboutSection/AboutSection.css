@@ -71,10 +71,14 @@
     height: auto;
   }
   .About-section_parent_div div h1 {
+    padding-top: 30px;
     font-size: x-large;
   }
   .About-section_parent_div div p {
     font-size: medium;
+  }
+  .About-section_parent_div div button {
+    margin-bottom: 30px;
   }
 }
 
