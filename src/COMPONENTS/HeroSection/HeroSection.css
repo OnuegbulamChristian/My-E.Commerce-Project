@@ -82,6 +82,12 @@
   .Hero-section-parent-div {
     height: auto;
   }
+  .Hero_container1 {
+    height: auto;
+  }
+  .Hero_container2 {
+    height: auto;
+  }
 }
 
 @media (max-width: 480px) {
