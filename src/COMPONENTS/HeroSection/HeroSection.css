@@ -71,10 +71,16 @@
 
 @media (max-width: 768px) {
   .Hero_container1 h1 {
-    font-size: x-large;
+    font-size: large;
   }
   .Hero_container1 p {
     font-size: small;
+  }
+  .Hero-section_div {
+    height: auto;
+  }
+  .Hero-section-parent-div {
+    height: auto;
   }
 }
 
@@ -94,5 +100,8 @@
   }
   .Hero_container1 h1 {
     padding-top: 50px;
+  }
+  .Hero-section_div {
+    height: auto;
   }
 }
