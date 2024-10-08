@@ -1,6 +1,7 @@
 import React from "react";
 import "./HeroSection.css";
-import HeroImage from "../../ASSETS/young-person-wearing-hoodie-mockup-removebg-preview (1).png";
+import HeroImage from "../../ASSETS/young-person-wearing-hoodie-mockup.png";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -12,10 +13,12 @@ const HeroSection = () => {
           </h1>
           <p>
             We curate the finest fashion pieces, blending contemporary elegance
-            with iconic design. From runway-inspired collections to bespoke
+            with iconic design. From runway inspired collections to bespoke
             accessories
           </p>
-          <button>Shop Now</button>
+          <Link to={"/Shop"}>
+            <button>Shop Now</button>
+          </Link>
         </div>
         <div className="Hero_container2">
           <img src={HeroImage} alt="" />
