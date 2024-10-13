@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 const Offers = () => {
   return (
-    <div className="h-96 bg-slate-200">
-      <div className="flex justify-center items-center gap gap-5 mx-auto w-11/12 h-96">
+    <div className="h-max md:h-96 bg-slate-200">
+      <div className="flex p-4 justify-center flex-wrap md:flex-nowrap items-center gap-3 md:space-x-10 mx-auto w-11/12 h-max md:h-96">
         <Link to={"/Shop"}>
-          <div className="w-72 h-64 text-white flex flex-col justify-center items-start pl-6 rounded-xl bg-red-800">
+          <div className="w-full sm:w-72 h-64 text-white flex flex-col justify-center items-start p-7 sm:pl-6 rounded-xl bg-red-800">
             <CiDeliveryTruck className="text-5xl " />
             <h1 className="text-2xl font-bold font-serif py-3.5">
               Free Shipping
@@ -21,7 +21,7 @@ const Offers = () => {
         </Link>
 
         <Link to={"/Shop"}>
-          <div className="w-72 h-64 text-white flex flex-col justify-center items-start pl-6 rounded-xl bg-red-800">
+          <div className="w-full sm:w-72 h-64 text-white flex flex-col justify-center items-start p-7 sm:pl-6 rounded-xl bg-red-800">
             <MdSecurity className="text-5xl" />
             <h1 className="text-2xl font-bold font-serif py-3.5">
               Secure Payment
@@ -34,7 +34,7 @@ const Offers = () => {
         </Link>
 
         <Link to={"/Contact"}>
-          <div className="w-72 h-64 text-white flex flex-col justify-center items-start pl-6 rounded-xl bg-red-800">
+          <div className="w-full md:w-72 h-64 text-white flex flex-col justify-center items-start p-7 sm:pl-6 rounded-xl bg-red-800">
             <MdOutlineHelpOutline className="text-5xl" />
             <h1 className="text-2xl font-bold font-serif py-3.5">Need Help?</h1>
             <p className="text-sm">

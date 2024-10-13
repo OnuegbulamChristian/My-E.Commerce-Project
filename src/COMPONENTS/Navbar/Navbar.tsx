@@ -28,7 +28,7 @@ export default function Navbar1() {
     <Disclosure as="nav" className="bg-red-800">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-white">
               <span className="absolute -inset-0.5" />
@@ -44,15 +44,15 @@ export default function Navbar1() {
             </DisclosureButton>
           </div>
 
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            {/* <div className="flex flex-shrink-0 items-center">
+          <div className="flex flex-1 items-center justify-center sm:items-stretch lg:justify-start">
+            <div className="flex flex-shrink-0 items-center">
               <img
                 alt="Your Company"
                 src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
                 className="h-8 w-auto"
               />
-            </div> */}
-            <div className="hidden sm:ml-6 sm:block">
+            </div>
+            <div className="hidden lg:ml-6 lg:block">
               <ul className="flex justify-center items-center gap-3 text-white font-normal text-sm py-2">
                 <Link to={"/"}>
                   <p>HOME</p>
@@ -76,20 +76,21 @@ export default function Navbar1() {
             </div>
           </div>
 
-          <div className="absolute gap-14 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <div className="flex gap-3 justify-center items-center">
+          <div className="absolute gap-3 md:gap-14 inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 lg:pr-0">
+            <div className="flex gap-1 justify-center items-center lg:flex gap-3 justify-center items-center">
               <div>
-                <MdOutlineAddShoppingCart className="text-white text-2xl" />
+                <MdOutlineAddShoppingCart className="text-white text-lg md:text-2xl" />
               </div>
               <div>
-                <FaHeartCirclePlus className="text-white text-2xl" />
+                <FaHeartCirclePlus className="text-white text-lg md:text-2xl" />
               </div>
             </div>
+
             <div>
               <Link to={"/Login"}>
                 <button
                   type="button"
-                  className="rounded-md font-bold bg-white p-1 text-red-800 w-24"
+                  className="rounded-md font-bold text-sm font-serif bg-white p-1 text-red-800 w-14 md:w-24 "
                 >
                   Login
                 </button>
@@ -99,7 +100,7 @@ export default function Navbar1() {
         </div>
       </div>
 
-      <DisclosurePanel className="md:hidden">
+      <DisclosurePanel className="lg:hidden">
         <div className="space-y-1 px-2 pb-3 pt-2">
           <ul className="flex flex-col px-2.5 justify-start items-start gap-3 text-white font-normal text-sm py-2">
             <Link to={"/"}>
