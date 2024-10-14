@@ -3,6 +3,7 @@ import Navbar1 from "../COMPONENTS/Navbar/Navbar";
 import HeroSection from "../COMPONENTS/HeroSection/HeroSection";
 import AboutSection from "../COMPONENTS/AboutSection/AboutSection";
 import Offers from "../COMPONENTS/Offers/Offers";
+import Discount from "../COMPONENTS/Discount/Discount";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <HeroSection />
       <AboutSection />
       <Offers />
+      <Discount />
     </div>
   );
 };
