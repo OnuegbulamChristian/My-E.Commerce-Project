@@ -4,6 +4,7 @@ import HeroSection from "../COMPONENTS/HeroSection/HeroSection";
 import AboutSection from "../COMPONENTS/AboutSection/AboutSection";
 import Offers from "../COMPONENTS/Offers/Offers";
 import Discount from "../COMPONENTS/Discount/Discount";
+import ProductSamples from "../COMPONENTS/ProductSamples/ProductSamples";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <AboutSection />
       <Offers />
       <Discount />
+      <ProductSamples />
     </div>
   );
 };
