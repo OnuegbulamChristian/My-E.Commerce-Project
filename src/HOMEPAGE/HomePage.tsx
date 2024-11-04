@@ -5,6 +5,7 @@ import AboutSection from "../COMPONENTS/AboutSection/AboutSection";
 import Offers from "../COMPONENTS/Offers/Offers";
 import Discount from "../COMPONENTS/Discount/Discount";
 import Cartegories from "../COMPONENTS/Cartegories/Cartegories";
+import CustomerReview from "../COMPONENTS/CustomerReview/CustomerReview";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Offers />
       <Discount />
       <Cartegories />
+      <CustomerReview />
     </div>
   );
 };

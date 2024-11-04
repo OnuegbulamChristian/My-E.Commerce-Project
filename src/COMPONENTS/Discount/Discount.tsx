@@ -35,30 +35,30 @@ const Discount = () => {
 
         <div className="h-max md:h-[66vh] w-full flex flex-col justify-center items-center my-[15px]">
           <div>
-            <h1 className="text-red-800 font-bold text-3xl md:text-5xl text-center">
+            <h1 className="text-red-800 font-bold text-3xl md:text-5xl text-center font-serif">
               20% Discount
             </h1>
-            <p className="text-center text-lg md:text-xl pb-[35px]">
+            <p className="text-center text-lg md:text-xl pb-[35px] font-serif">
               On New Arrivals
             </p>
             <div className="flex gap-3 sm:space-x-10 md:space-x-[70px]">
-              <div className="h-[100px] sm:h-[150px] md:h-[200px] w-[100px] sm:w-[150px] md:w-[200px] border-solid rounded-2xl border-[5px] border-red-800 bg-amber-800">
+              <div className="h-[100px] sm:h-[150px] md:h-[200px] w-[100px] sm:w-[150px] md:w-[200px] border-solid rounded-lg border-[3px] border-red-800 bg-amber-800">
                 <img
                   src={Sneakers}
                   alt=""
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-md"
                 />
               </div>
-              <div className="h-[100px] sm:h-[150px] md:h-[200px] w-[100px] sm:w-[150px] md:w-[200px] border-solid rounded-2xl border-[5px] border-red-800 bg-blue">
+              <div className="h-[100px] sm:h-[150px] md:h-[200px] w-[100px] sm:w-[150px] md:w-[200px] border-solid rounded-lg border-[3px] border-red-800 bg-blue">
                 <img
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-md"
                   src={Laptop}
                   alt=""
                 />
               </div>
-              <div className="h-[100px] sm:h-[150px] md:h-[200px] w-[100px] sm:w-[150px] md:w-[200px] border-solid rounded-2xl border-[5px] border-red-800 bg-blue">
+              <div className="h-[100px] sm:h-[150px] md:h-[200px] w-[100px] sm:w-[150px] md:w-[200px] border-solid rounded-lg border-[3px] border-red-800 bg-blue">
                 <img
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-md"
                   src={Drumset}
                   alt=""
                 />
