@@ -6,6 +6,7 @@ import Offers from "../COMPONENTS/Offers/Offers";
 import Discount from "../COMPONENTS/Discount/Discount";
 import Cartegories from "../COMPONENTS/Cartegories/Cartegories";
 import CustomerReview from "../COMPONENTS/CustomerReview/CustomerReview";
+import Footer from "../COMPONENTS/Footer/Footer";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <Discount />
       <Cartegories />
       <CustomerReview />
+      <Footer />
     </div>
   );
 };
