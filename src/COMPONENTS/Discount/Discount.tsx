@@ -41,7 +41,7 @@ const Discount = () => {
             <p className="text-center text-lg md:text-xl pb-[35px]">
               On New Arrivals
             </p>
-            <div className="flex gap-4 sm:space-x-10 md:space-x-[70px]">
+            <div className="flex gap-3 sm:space-x-10 md:space-x-[70px]">
               <div className="h-[100px] sm:h-[150px] md:h-[200px] w-[100px] sm:w-[150px] md:w-[200px] border-solid rounded-2xl border-[5px] border-red-800 bg-amber-800">
                 <img
                   src={Sneakers}
