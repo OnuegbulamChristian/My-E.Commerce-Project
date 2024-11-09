@@ -3,15 +3,13 @@ import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./HOMEPAGE/HomePage";
-import SignUp from "./SCREENS/SignUp";
-import Login from "./SCREENS/Login";
-
+import Login from "./SCREENS/Login/Login";
 import AboutUs from "./PAGES/AboutUs";
 import ContactUs from "./PAGES/ContactUs";
-
 import Shop from "./PAGES/Shop";
 import Sale from "./PAGES/Sale";
 import Review from "./PAGES/Review";
+import SignUp from "./SCREENS/Signup/SignUp";
 
 function App() {
   return (
@@ -19,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/Signup" element={<SignUp />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Shop" element={<Shop />} />
           <Route path="/AboutUs" element={<AboutUs />} />

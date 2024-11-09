@@ -8,9 +8,7 @@ const HeroSection = () => {
     <div className="Hero-section_div">
       <div className="Hero-section-parent-div">
         <div className="Hero_container1">
-          <h1>
-            Experience Timeless & Luxury Fashion With Our Exquisite Collections
-          </h1>
+          <h1>Shop for Everything You Need on Shopifi Nigeria</h1>
           <p>
             We curate the finest fashion pieces, blending contemporary elegance
             with iconic design. From runway inspired collections to bespoke

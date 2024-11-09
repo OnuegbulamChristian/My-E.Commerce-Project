@@ -11,6 +11,7 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+import NavLogo from "../../ASSETS/logo white.png";
 
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
@@ -45,14 +46,14 @@ export default function Navbar1() {
           </div>
 
           <div className="flex flex-1 items-center justify-center sm:items-stretch lg:justify-start">
-            <div className="flex flex-shrink-0 items-center">
+            <div className="flex flex-shrink-0 items-center w-[170px] h-[50px]">
               <img
-                alt="Your Company"
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
-                className="h-8 w-auto"
+                src={NavLogo}
+                alt="Company Logo"
+                className="w-full h-full object-cover mt-4"
               />
             </div>
-            <div className="hidden lg:ml-6 lg:block">
+            <div className="hidden lg:ml-6 lg:block pt-2">
               <ul className="flex justify-center items-center gap-3 text-white font-normal text-sm py-2">
                 <Link to={"/"}>
                   <p>HOME</p>
@@ -62,9 +63,6 @@ export default function Navbar1() {
                 </Link>
                 <Link to={"/Shop"}>
                   <p>SHOP</p>
-                </Link>
-                <Link to={"/Sale"}>
-                  <p>SALE</p>
                 </Link>
                 <Link to={"/Review"}>
                   <p>REVIEW</p>
@@ -77,22 +75,13 @@ export default function Navbar1() {
           </div>
 
           <div className="absolute gap-3 md:gap-14 inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 lg:pr-0">
-            <div className="flex gap-1 justify-center items-center lg:flex gap-3 justify-center items-center">
-              <div>
-                <MdOutlineAddShoppingCart className="text-white text-lg md:text-2xl" />
-              </div>
-              <div>
-                <FaHeartCirclePlus className="text-white text-lg md:text-2xl" />
-              </div>
-            </div>
-
             <div>
               <Link to={"/Login"}>
                 <button
                   type="button"
-                  className="rounded-md font-bold text-sm font-serif bg-white p-1 text-red-800 w-14 md:w-24 "
+                  className="rounded-md text-xs md:text-lg font-serif bg-white p-1 text-red-800 w-14 md:w-[150px] md:h-[40px] h-[30px] w-[90px]"
                 >
-                  Login
+                  Login/Sign Up
                 </button>
               </Link>
             </div>
@@ -111,9 +100,6 @@ export default function Navbar1() {
             </Link>
             <Link to={"/Shop"}>
               <p>SHOP</p>
-            </Link>
-            <Link to={"/Sale"}>
-              <p>SALE</p>
             </Link>
             <Link to={"/Review"}>
               <p>REVIEW</p>

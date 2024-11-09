@@ -5,7 +5,7 @@ const CustomerReview = () => {
   return (
     <div className="h-max md:h-[50vh]">
       <div className="h-max md:h-[50vh] w-[95%] flex flex-col mx-auto justify-center items-center text-center py-[15px] font-serif">
-        <h1 className="font-bold text-[30px] sm:text-[40px] md:text-[50px]">
+        <h1 className="font-bold text-black text-[30px] sm:text-[40px] md:text-[50px]">
           Reviews
         </h1>
         <p className="w-[75%]  text-xs sm:text-base py-[10px] md:py-[20px]">
