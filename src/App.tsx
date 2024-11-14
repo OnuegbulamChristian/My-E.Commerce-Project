@@ -10,6 +10,7 @@ import Shop from "./PAGES/Shop";
 import Sale from "./PAGES/Sale";
 import Review from "./PAGES/Review";
 import SignUp from "./SCREENS/Signup/SignUp";
+import UserDashboard from "./SCREENS/UserDashboard/UserDashboard";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Contact" element={<ContactUs />} />
           <Route path="/Sale" element={<Sale />} />
           <Route path="/Review" element={<Review />} />
+          <Route path="/Dashboard" element={<UserDashboard />} />
         </Routes>
       </BrowserRouter>
     </div>
