@@ -7,7 +7,7 @@ const Offers = () => {
   return (
     <div className="h-max md:h-96">
       <div className="w-11/12 h-max md:h-96 flex flex-wrap sm:flex-nowrap gap-3 md:space-x-10 mx-auto justify-center items-center py-6">
-        <div className="bg-transparent border-solid border-[3px] border-red-800 w-full md:w-72 h-48 md:h-60 rounded-2xl text-black flex flex-col justify-center items-start pl-10 md:pl-4">
+        <div className="bg-transparent border-solid border-[3px] border-red-800 w-full md:w-72 h-48 md:h-60 rounded-2xl text-black flex flex-col justify-center items-start pl-10 md:pl-4 py-[20px]">
           <CiDeliveryTruck className="text-5xl" />
           <h1 className="py-3 font-bold font-serif text-2xl text-red-800">
             Free Shipping
@@ -17,7 +17,7 @@ const Offers = () => {
           </p>
         </div>
 
-        <div className="bg-transparent border-solid border-[3px] border-red-800 w-full md:w-72 h-48 md:h-60 rounded-2xl text-black flex flex-col justify-center items-start pl-10 md:pl-4">
+        <div className="bg-transparent border-solid border-[3px] border-red-800 w-full md:w-72 h-48 md:h-60 rounded-2xl text-black flex flex-col justify-center items-start pl-10 md:pl-4 py-[20px]">
           <MdOutlineSecurity className="text-5xl" />
           <h1 className="py-3 font-bold font-serif text-2xl text-red-800">
             Secure Payment
@@ -27,7 +27,7 @@ const Offers = () => {
           </p>
         </div>
 
-        <div className="bg-transparent border-solid border-[3px] border-red-800 w-full md:w-72 h-48 md:h-60 rounded-2xl text-black flex flex-col justify-center items-start pl-10 md:pl-4">
+        <div className="bg-transparent border-solid border-[3px] border-red-800 w-full md:w-72 h-48 md:h-60 rounded-2xl text-black flex flex-col justify-center items-start pl-10 md:pl-4 py-[20px]">
           <MdOutlineHelpOutline className="text-5xl" />
           <h1 className="py-3 font-bold font-serif text-2xl text-red-800">
             Need Help
