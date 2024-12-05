@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
         {/* navlinks section */}
         <div>
-          <ul className="hidden sm:flex gap-5 text-sm text-red-800 font-bold">
+          <ul className="hidden md:flex gap-5 text-sm text-red-800 font-bold">
             <NavLink to={"/"}>
               <p>HOME</p>
               <hr className="w-2/4 border-none h-[2px] bg-black hidden" />
@@ -71,7 +71,7 @@ const Navbar = () => {
           </Link>
           {/* menu dropdown section */}
           <IoMenu
-            className="text-2xl cursor-pointer text-red-800 sm:hidden"
+            className="text-2xl cursor-pointer text-red-800 md:hidden"
             onClick={() => setVisible(true)}
           />
         </div>
