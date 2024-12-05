@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-[10vh] bg-gray-100">
       <div className="flex items-center justify-between font-medium h-[10vh] w-[95%]">
-        <div className="w-48 pt-4">
+        <div className="w-40 md:w-48 pt-4">
           <img
             src={NavLogo}
             alt="Company Logo"
@@ -45,9 +45,9 @@ const Navbar = () => {
         </div>
         {/* search and profile section */}
         <div className="flex items-center gap-6">
-          <CiSearch className="text-2xl cursor-pointer text-red-800" />
+          <CiSearch className="text-xl md:text-2xl cursor-pointer text-red-800" />
           <div className="group relative bg-transparent">
-            <IoPerson className="text-2xl cursor-pointer text-red-800" />
+            <IoPerson className="text-xl md:text-2xl cursor-pointer text-red-800" />
             <div className="group-hover:block hidden absolute dropdown-menu right-0 border-transparent bg-transparent">
               <div className="flex flex-col gap-2 w-40 py-3 px-3 bg-gray-100 text-red-800 rounded ">
                 <p className="cursor-pointer hover:text-black text-xs">
@@ -64,14 +64,14 @@ const Navbar = () => {
           </div>
           {/* cart section */}
           <Link className="relative" to={"/cart"}>
-            <FaShoppingCart className="text-2xl text-red-800" />
+            <FaShoppingCart className="text-xl md:text-2xl text-red-800" />
             <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-red-800 text-white aspect-square rounded-full text-[8px]">
               10
             </p>
           </Link>
           {/* menu dropdown section */}
           <IoMenu
-            className="text-2xl cursor-pointer text-red-800 md:hidden"
+            className="text-xl md:text-2xl cursor-pointer text-red-800 md:hidden"
             onClick={() => setVisible(true)}
           />
         </div>
