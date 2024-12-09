@@ -23,11 +23,11 @@ const LatestCollections = () => {
 
   useEffect(() => {
     // Slice latest products after fetching
-    setLatestProducts(latestProducts.slice(0, 4));
-  }, [latestProducts]);
+    setLatestProducts(getProducts.slice(0, 6));
+  }, [getProducts]);
 
   return (
-    <div className="w-full h-max md:h-[130vh] bg-gray-100">
+    <div className="w-full h-max md:h-[130vh]">
       <div className="w-[95%} h-max md:h-[130vh] mx-auto my-10 flex flex-col justify-center items-center ">
         <div className="text-center py-8 text-3xl">
           <Title text1={"LATEST"} text2={"COLLECTIONS"} />
@@ -40,8 +40,8 @@ const LatestCollections = () => {
         </div>
 
         {/* Rendering Products */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 gap-y-6 flex justify-center items-center pl-[20px] md:pl-[40px]">
-          {getProducts.map((items: any, index: any) => (
+        <div className="flex flex-wrap gap-[30px] md:gap-[185px] gap-y-[30px] flex justify-center items-start">
+          {latestProducts.map((items: any, index: any) => (
             <ProductItem
               key={index}
               _id={items?._id}
