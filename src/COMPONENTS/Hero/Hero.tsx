@@ -4,7 +4,7 @@ import HeroImage from "../../ASSETS/Hero image.jpg";
 const Hero = () => {
   return (
     <div className="w-full h-max md:h-[86vh] bg-transparent py-[3vh]">
-      <div className="w-[95%] h-max md:h-[80vh] flex flex-col md:flex-row border-[2px] border-black items-center justify-center mx-auto">
+      <div className="w-[95%] h-max md:h-[80vh] flex flex-col md:flex-row border-[2px] border-red-800 items-center justify-center mx-auto">
         {/* hero left side */}
         <div className="w-full md:w-1/2 flex items-center justify-center py-10 md:py-0">
           <div className="text-black">

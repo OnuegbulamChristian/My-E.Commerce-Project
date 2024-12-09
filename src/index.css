@@ -22,3 +22,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@media (max-width: 780px) {
+  a.active {
+    background-color: rgb(153 27 27);
+    color: white;
+  }
+}

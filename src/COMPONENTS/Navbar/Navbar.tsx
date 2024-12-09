@@ -12,13 +12,15 @@ const Navbar = () => {
   return (
     <div className="w-full h-[10vh] bg-gray-100">
       <div className="flex items-center justify-between font-medium h-[10vh] w-[95%]">
-        <div className="w-40 md:w-48 pt-4">
-          <img
-            src={NavLogo}
-            alt="Company Logo"
-            className="w-[100%] h-[100%] object-contain"
-          />
-        </div>
+        <Link to={"/"}>
+          <div className="w-40 md:w-48 pt-4">
+            <img
+              src={NavLogo}
+              alt="Company Logo"
+              className="w-[100%] h-[100%] object-contain"
+            />
+          </div>
+        </Link>
         {/* navlinks section */}
         <div>
           <ul className="hidden md:flex gap-5 text-sm text-red-800 font-bold">
