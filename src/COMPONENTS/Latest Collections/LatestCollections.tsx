@@ -27,7 +27,7 @@ const LatestCollections = () => {
   }, [getProducts]);
 
   return (
-    <div className="w-full h-max md:h-[130vh]">
+    <div className="w-full h-max md:h-[130vh] bg-gray-100">
       <div className="w-[95%} h-max md:h-[130vh] mx-auto my-10 flex flex-col justify-center items-center ">
         <div className="text-center py-8 text-3xl">
           <Title text1={"LATEST"} text2={"COLLECTIONS"} />
@@ -40,7 +40,7 @@ const LatestCollections = () => {
         </div>
 
         {/* Rendering Products */}
-        <div className="flex flex-wrap gap-[30px] md:gap-[185px] gap-y-[30px] flex justify-center items-start">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-[30px] md:gap-[50px] gap-y-6 flex justify-start items-start pb-[20px]">
           {latestProducts.map((items: any, index: any) => (
             <ProductItem
               key={index}
